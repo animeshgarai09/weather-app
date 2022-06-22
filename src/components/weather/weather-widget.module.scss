@@ -1,0 +1,102 @@
+.container {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    border: 1px solid #2c2c2c;
+    width: 40rem;
+}
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+    .description {
+        font-weight: 500;
+        font-size: 0.9rem;
+        color: var(--clr-gray-1);
+    }
+    .date {
+        font-weight: 500;
+        font-size: 0.9rem;
+        color: var(--clr-gray-1);
+    }
+}
+svg {
+    fill: var(--clr-accent);
+}
+.flex_box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.current_info {
+    .data {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .temp {
+            display: flex;
+            justify-content: flex-start;
+            line-height: 0.7;
+            font-size: 3.5rem;
+            font-weight: 500;
+            gap: 0.4rem;
+            span {
+                font-size: 1.5rem;
+            }
+        }
+        svg {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+    .other_data {
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid var(--clr-gray-2);
+        padding: 0 0.8rem;
+        span {
+            color: var(--clr-gray-1);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+    }
+}
+.location {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+
+    h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+}
+
+.forecast_con {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        align-items: center;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        &:hover {
+            background: #3b3b3b;
+        }
+        .date,
+        .temp,
+        .description {
+            font-weight: 500;
+            font-size: 0.8rem;
+            color: var(--clr-gray-1);
+        }
+    }
+}
