@@ -86,10 +86,11 @@ svg {
         flex-direction: column;
         gap: 0.4rem;
         align-items: center;
-        padding: 1rem 2rem;
+        padding: 1rem;
         border-radius: 10px;
+        text-align: center;
         &:hover {
-            background: #3b3b3b;
+            background: var(--clr-body-bg-light);
         }
         .date,
         .temp,
